@@ -7,6 +7,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { PlayerDetailsComponent } from './player-details/player-details.component';
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,

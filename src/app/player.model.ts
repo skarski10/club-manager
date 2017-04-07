@@ -4,7 +4,7 @@ export class Player {
     public image: string,
     public number: number,
     public position: string,
-    public B/T: string,
+    public BT: string,
     public height: string,
     public weight: string,
     public born: string

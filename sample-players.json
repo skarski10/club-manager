@@ -1,0 +1,29 @@
+{ "players": [{
+    "name": "Freddie Freeman",
+    "image": "http://d3k2oh6evki4b7.cloudfront.net/req/201704050/images/headshots/2/2c66b3f7_mlbam.jpg",
+    "number": "5",
+    "position": "1B",
+    "BT": "L/R",
+    "height": "6'5",
+    "weight": "220",
+    "born": "9/12/1989 in Fountain Valley, CA"
+    }, {
+    "name": "Julio Teheran",
+    "image": "http://d3k2oh6evki4b7.cloudfront.net/req/201704050/images/headshots/4/4eabfdb1_mlbam.jpg",
+    "number": "49",
+    "position": "P",
+    "BT": "R/R",
+    "height": "6'2",
+    "weight": "205",
+    "born": "1/27/1991 in Cartagena, Colombia"
+      }, {
+    "name": "Dansby Swanson",
+    "image": "http://mlb.mlb.com/mlb/images/players/head_shot/621020.jpg",
+    "number": "7",
+    "position": "SS",
+    "BT": "R/R",
+    "height": "6'1",
+    "weight": "190",
+    "born": "2/11/1994 in Kennesaw, GA"
+  }]
+}
