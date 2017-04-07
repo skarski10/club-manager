@@ -28,7 +28,10 @@
       <div class="">
         <input #newBorn type="text" placeholder="Born">
       </div>
-      <button (click)="submitForm(newName.value, newImage.value, newNumber.value, newPosition.value, newBT.value, newHeight.value, newWeight.value, newBorn.value); newName.value=''; newImage.value=''; newNumber.value=''; newPosition.value=''; newBT.value=''; newHeight.value=''; newWeight.value=''; newBorn.value=''" routerLink="/">Add</button>
+      <div class="">
+        <textarea #newBio type="text" placeholder="Bio"></textarea>
+      </div>
+      <button (click)="submitForm(newName.value, newImage.value, newNumber.value, newPosition.value, newBT.value, newHeight.value, newWeight.value, newBorn.value, newBio.value); newName.value=''; newImage.value=''; newNumber.value=''; newPosition.value=''; newBT.value=''; newHeight.value=''; newWeight.value=''; newBorn.value=''; newBio.value=''" routerLink="/">Add</button>
     </div>
   </div>
 </div>

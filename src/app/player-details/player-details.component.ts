@@ -31,7 +31,8 @@ export class PlayerDetailsComponent implements OnInit {
          dataLastEmittedFromObserver.bt,
          dataLastEmittedFromObserver.height,
          dataLastEmittedFromObserver.weight,
-         dataLastEmittedFromObserver.born)
+         dataLastEmittedFromObserver.born,
+         dataLastEmittedFromObserver.bio)
        })
       }
     }

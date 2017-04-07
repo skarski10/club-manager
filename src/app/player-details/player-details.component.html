@@ -4,12 +4,13 @@
     <div class="col-md-6">
       <img src="{{playerToDisplay?.image}}" alt="Picture of Braves {{playerToDisplay?.position}} {{playerToDisplay?.name}}" />
     </div>
-    <div class="col-md-6">
-      Position: {{playerToDisplay?.position}}<br>
-      B/T: {{playerToDisplay?.bt}}<br>
-      Height: {{playerToDisplay?.height}}<br>
-      Weight: {{playerToDisplay?.weight}}<br>
-      Born: {{playerToDisplay?.born}}<br>
+    <div class="col-md-6 player-info">
+      <span class="player-details">Position: </span>{{playerToDisplay?.position}}<br><br>
+      <span class="player-details">B/T: </span>{{playerToDisplay?.bt}}<br><br>
+      <span class="player-details">Height: </span>{{playerToDisplay?.height}}"<br><br>
+      <span class="player-details">Weight: </span>{{playerToDisplay?.weight}}lbs<br><br>
+      <span class="player-details">Born: </span>{{playerToDisplay?.born}}<br><br>
+      <span class="player-details">Bio: </span>{{playerToDisplay?.bio}}
     </div>
   </div>
 </div>

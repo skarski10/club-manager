@@ -24,7 +24,7 @@ export class PlayerService {
 
   editPlayer(updatedPlayer){
     var playerEntryInFirebase = this.getPlayerById(updatedPlayer.$key);
-    playerEntryInFirebase.update({name: updatedPlayer.name, image:  updatedPlayer.image, number: updatedPlayer.number, position:  updatedPlayer.position, BT: updatedPlayer.bt, height: updatedPlayer.height, weight: updatedPlayer.weight, born: updatedPlayer.born});
+    playerEntryInFirebase.update({name: updatedPlayer.name, image:  updatedPlayer.image, number: updatedPlayer.number, position:  updatedPlayer.position, BT: updatedPlayer.bt, height: updatedPlayer.height, weight: updatedPlayer.weight, born: updatedPlayer.born, bio: updatedPlayer.bio});
   }
   deletePlayer(localPlayerToDelete){
     console.log(localPlayerToDelete);

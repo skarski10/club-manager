@@ -15,6 +15,14 @@
   background-color: rgba(206, 17, 65, 1);
 }
 
-.panel-default > .player-name {
+.panel-default > .panel-heading {
   background-color: rgba(206, 17, 65, 1);
+}
+
+.player-info {
+  font-size: 18px;
+}
+
+.player-details {
+  font-weight: bold;
 }

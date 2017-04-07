@@ -7,6 +7,7 @@ export class Player {
     public bt: string,
     public height: string,
     public weight: string,
-    public born: string
+    public born: string,
+    public bio: string
   ) {}
 }

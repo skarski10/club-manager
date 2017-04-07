@@ -23,6 +23,9 @@
  <div class="form-group">
    <input class="form-control" [(ngModel)]="selectedPlayer.born" name="born">
  </div>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.bio" name="bio">
+ </div>
  <button class="btn btn-warning" (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
  <hr>
 <button class="btn btn-danger" (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
