@@ -6,7 +6,7 @@
     "Kory <koryskarbek@yahoo.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/skarski10/club-manager",
   "ignore": [
     "**/.*",
     "node_modules",
