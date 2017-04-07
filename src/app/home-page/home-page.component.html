@@ -1,6 +1,6 @@
 <h2>Braves Roster:</h2>
 
-<div *ngFor="let player of players" class="panel panel-default">
+<div *ngFor="let player of players | async" class="panel panel-default">
   <div class="panel-body">
     <h3>{{player?.name}}</h3>
     <img src="{{player?.image}}" alt="" (click)="goToPlayerPage(player)"/>
@@ -8,7 +8,7 @@
     <div *ngIf="currentRoute === '/admin'">
       {{player?.title}} | {{player?.creator}}
       <hr>
-      <app-edit-player [editProject]="player"></app-edit-player>
+      <!-- <app-edit-player [editPlayer]="player"></app-edit-player> -->
     </div>
   </div>
 </div>

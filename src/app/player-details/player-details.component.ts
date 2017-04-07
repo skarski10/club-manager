@@ -11,6 +11,7 @@ import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
   styleUrls: ['./player-details.component.css'],
   providers: [PlayerService]
 })
+
 export class PlayerDetailsComponent implements OnInit {
   playerId: string;
   playerToDisplay: Player;
@@ -19,8 +20,18 @@ export class PlayerDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-    this.playerId = parseInt(urlParameters['id']);
-  });
-  }
-
-}
+          this.playerId = urlParameters['id'];
+        });
+         this.playerService.getPlayerById(this.playerId).subscribe(dataLastEmittedFromObserver => {
+         this.playerToDisplay = new Player
+         (dataLastEmittedFromObserver.name,
+         dataLastEmittedFromObserver.image,
+         dataLastEmittedFromObserver.number,
+         dataLastEmittedFromObserver.position,
+         dataLastEmittedFromObserver.bt,
+         dataLastEmittedFromObserver.height,
+         dataLastEmittedFromObserver.weight,
+         dataLastEmittedFromObserver.born)
+       })
+      }
+    }
