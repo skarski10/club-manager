@@ -6,7 +6,7 @@
     <img src="{{player?.image}}" alt="" (click)="goToPlayerPage(player)"/>
 
     <div *ngIf="currentRoute === '/admin'">
-      {{player?.title}} | {{player?.creator}}
+      {{player?.number}}
       <hr>
       <!-- <app-edit-player [editPlayer]="player"></app-edit-player> -->
     </div>

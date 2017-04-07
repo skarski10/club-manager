@@ -1,3 +1,37 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Create a new project</h2>
+  </div>
+  <div class="panel-body">
+    <div class="">
+      <div class="">
+        <input #newName type="text" placeholder="Name">
+      </div>
+      <div class="">
+        <input #newImage type="text" placeholder="Image">
+      </div>
+      <div class="">
+        <input #newNumber type="text" placeholder="Number">
+      </div>
+      <div class="">
+        <input #newPosition type="text" placeholder="Position">
+      </div>
+      <div class="">
+        <input #newBT type="text" placeholder="BT">
+      </div>
+      <div class="">
+        <input #newHeight type="text" placeholder="Height">
+      </div>
+      <div class="">
+        <input #newWeight type="text" placeholder="Weight">
+      </div>
+      <div class="">
+        <input #newBorn type="text" placeholder="Born">
+      </div>
+      <button (click)="submitForm(newName.value, newImage.value, newNumber.value, newPosition.value, newBT.value, newHeight.value, newWeight.value, newBorn.value); newName.value=''; newImage.value=''; newNumber.value=''; newPosition.value=''; newBT.value=''; newHeight.value=''; newWeight.value=''; newBorn.value=''" routerLink="/">Add</button>
+    </div>
+  </div>
+</div>
+<div class="">
+  <app-home-page></app-home-page>
+</div>
