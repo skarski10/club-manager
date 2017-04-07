@@ -1,3 +1,28 @@
-<p>
-  edit-player works!
-</p>
+<h2>{{selectedPlayer?.name}}</h2>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.name" name="name">
+ </div>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.image" name="image">
+ </div>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.number" name="number">
+ </div>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.position"name="position">
+ </div>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.bt" name="bt">
+ </div>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.height" name="height">
+ </div>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.weight" name="weight">
+ </div>
+ <div class="form-group">
+   <input class="form-control" [(ngModel)]="selectedPlayer.born" name="born">
+ </div>
+ <button class="btn btn-warning" (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+ <hr>
+<button class="btn btn-danger" (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
