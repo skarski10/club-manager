@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+#home-logo {
+  width: 80px;
+}
+#header {
+  background-color: rgba(19, 39, 79, 1);
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.player-name {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  background-color: rgba(206, 17, 65, 1);
+}
+
+.panel-default > .player-name {
+  background-color: rgba(206, 17, 65, 1);
+}

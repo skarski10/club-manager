@@ -1,4 +1,15 @@
-<div class="">
-  <h1>{{playerToDisplay?.name}}</h1>
-  <img src="{{playerToDisplay?.image}}" alt="Picture of Braves {{playerToDisplay?.position}} {{playerToDisplay?.name}}" />
+<div class="panel panel-default">
+    <div class="panel-heading player-name">{{playerToDisplay?.name}}</div>
+    <div class="panel-body">
+    <div class="col-md-6">
+      <img src="{{playerToDisplay?.image}}" alt="Picture of Braves {{playerToDisplay?.position}} {{playerToDisplay?.name}}" />
+    </div>
+    <div class="col-md-6">
+      Position: {{playerToDisplay?.position}}<br>
+      B/T: {{playerToDisplay?.bt}}<br>
+      Height: {{playerToDisplay?.height}}<br>
+      Weight: {{playerToDisplay?.weight}}<br>
+      Born: {{playerToDisplay?.born}}<br>
+    </div>
+  </div>
 </div>
