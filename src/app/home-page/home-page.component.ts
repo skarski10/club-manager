@@ -13,12 +13,18 @@ import { Player } from '../player.model';
 export class HomePageComponent implements OnInit {
   players:FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByPosition: string = "allPlayers";
+
 
   constructor(private router: Router, private playerService: PlayerService) { }
 
   ngOnInit() {
     this.players = this.playerService.getPlayers();
   }
+
+  onChange(optionFromMenu) {
+  this.filterByPosition = optionFromMenu;
+}
 
   goToPlayerPage(clickedPlayer) {
   this.router.navigate(['player-details', clickedPlayer.$key]);
